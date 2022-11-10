@@ -59,19 +59,13 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "Entered Email  Was incorrect ", Toast.LENGTH_SHORT).show();
                     }
 
-
-
-
                     else if (!emailValue.equals(registeredEmail)) {
                         Toast.makeText(Login.this, "Entered email was incorrect", Toast.LENGTH_SHORT).show();
                     }else if(!passwordValue.equals(registeredPassword)){
                         Toast.makeText(Login.this, "Entered password was incorrect", Toast.LENGTH_SHORT).show();
                     }
-                    else if (emailValue != registeredEmail && passwordValue != registeredPassword) {
-                        Toast.makeText(Login.this, "If you want to login First Register With Us", Toast.LENGTH_SHORT).show();
-                    }
                 } else {
-                    Toast.makeText(Login.this, "Please enter Required Fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "If you want to login First Register With Us", Toast.LENGTH_SHORT).show();
 
                 }
 
