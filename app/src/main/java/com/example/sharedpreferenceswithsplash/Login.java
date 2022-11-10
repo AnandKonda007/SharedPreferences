@@ -100,7 +100,7 @@ public class Login extends AppCompatActivity {
             super.onBackPressed();
             finishAffinity();
         } else {
-            Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Press back again to exit", Toast.LENGTH_SHORT).show();
         }
         backPressed = System.currentTimeMillis();
 
