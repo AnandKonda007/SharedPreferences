@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 public class Login extends AppCompatActivity {
     public static String PREFS_Name = "userinfo";
     EditText email, password;
@@ -57,11 +56,9 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "Login  Sucessfull", Toast.LENGTH_SHORT).show();
                     } else if (!email.getText().toString().trim().matches(emailPattern)) {
                         Toast.makeText(Login.this, "Entered Email  Was incorrect ", Toast.LENGTH_SHORT).show();
-                    }
-
-                    else if (!emailValue.equals(registeredEmail)) {
+                    } else if (!emailValue.equals(registeredEmail)) {
                         Toast.makeText(Login.this, "Entered email was incorrect", Toast.LENGTH_SHORT).show();
-                    }else if(!passwordValue.equals(registeredPassword)){
+                    } else if (!passwordValue.equals(registeredPassword)) {
                         Toast.makeText(Login.this, "Entered password was incorrect", Toast.LENGTH_SHORT).show();
                     }
                 } else {
